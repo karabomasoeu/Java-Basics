@@ -14,3 +14,21 @@ public class SimpleCalculator {
         
         double result = 0;
         boolean validOperation = true;
+
+           if (operator == '+') {
+            result = num1 + num2;
+        } else if (operator == '-') {
+            result = num1 - num2;
+        } else if (operator == '*') {
+            result = num1 * num2;
+        } else if (operator == '/') {
+            if (num2 != 0) {
+                result = num1 / num2;
+            } else {
+                System.out.println("Error: Division by zero!");
+                validOperation = false;
+            }
+        } else {
+            System.out.println("Error: Invalid operator!");
+            validOperation = false;
+        }
