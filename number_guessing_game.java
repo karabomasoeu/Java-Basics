@@ -17,4 +17,8 @@ public class NumberGuessingGame {
         System.out.println("Can you guess what it is?");
         System.out.println();
 
+        while (guess != targetNumber) {
+            System.out.print("Enter your guess: ");
+            guess = scanner.nextInt();
+            attempts++;
     
