@@ -21,4 +21,31 @@ public class NumberGuessingGame {
             System.out.print("Enter your guess: ");
             guess = scanner.nextInt();
             attempts++;
-    
+
+             if (guess < 1 || guess > 100) {
+                System.out.println("Please enter a number between 1 and 100!");
+                attempts--; 
+                System.out.println();
+            } else if (guess < targetNumber) {
+                System.out.println("Too low! Try a higher number.");
+                System.out.println();
+            } else if (guess > targetNumber) {
+                System.out.println("Too high! Try a lower number.");
+                System.out.println();
+            } else {
+                System.out.println("================================");
+                System.out.println("🎉 Congratulations!");
+                System.out.println("================================");
+                System.out.println("The number was: " + targetNumber);
+                System.out.println("You guessed it in " + attempts + " attempts!");
+                System.out.println();
+
+                 if (attempts <= 5) {
+                    System.out.println("Excellent!");
+                } else if (attempts <= 10) {
+                    System.out.println("Good job!");
+                } else {
+                    System.out.println("You made it!");
+                }
+            }
+        }
