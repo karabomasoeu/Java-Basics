@@ -12,3 +12,8 @@ public class TodoListApp {
         System.out.println("    Welcome to your to-do list manager!");
         System.out.println("========================================");
         System.out.println();
+
+        while (running) {
+            displayMenu();
+            int choice = getUserChoice();
+            System.out.println();
