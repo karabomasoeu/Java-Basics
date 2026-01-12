@@ -40,8 +40,23 @@ public class TodoListApp {
                     System.out.println("Goodbye!");
                     break;
                 default:
-                    System.out.println("Invalid choice! Please enter number between 1-6.");
+                    System.out.println("Invalid choice! Please enter a number between 1-6.");
             }
             
             System.out.println();
         }
+        scanner.close();
+    }
+    private static void displayMenu() {
+        System.out.println("========================================");
+        System.out.println("              MAIN MENU");
+        System.out.println("========================================");
+        System.out.println("1. Add a new task");
+        System.out.println("2. View all tasks");
+        System.out.println("3. Remove a task");
+        System.out.println("4. Mark task as complete");
+        System.out.println("5. Clear all tasks");
+        System.out.println("6. Exit");
+        System.out.println("========================================");
+        System.out.print("Enter your choice (1-6): ");
+    }
