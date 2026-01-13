@@ -60,3 +60,13 @@ public class TodoListApp {
         System.out.println("========================================");
         System.out.print("Enter your choice (1-6): ");
     }
+    private static int getUserChoice() {
+            try {
+                return scanner.nextInt();
+            } catch (Exception e) {
+                scanner.nextLine(); // Clear invalid input
+                return -1;
+            } finally {
+                scanner.nextLine(); // Clear the newline
+            }
+        }
