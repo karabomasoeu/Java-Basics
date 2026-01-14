@@ -70,3 +70,16 @@ public class TodoListApp {
                 scanner.nextLine(); // Clear the newline
             }
         }
+    private static void addTask() {
+        System.out.println("--- Add New Task ---");
+        System.out.print("Enter task description: ");
+        String task = scanner.nextLine();
+        
+        if (task.trim().isEmpty()) {
+            System.out.println("Error: Task cannot be empty!");
+        } else {
+            tasks.add(task);
+            System.out.println("✓ Task added successfully!");
+            System.out.println("Total tasks: " + tasks.size());
+        }
+    }
