@@ -96,3 +96,18 @@ public class TodoListApp {
             System.out.println("Total tasks: " + tasks.size());
         }
     }
+    private static void viewTasks() {
+        System.out.println("--- Your To-Do List ---");
+        
+        if (tasks.isEmpty()) {
+            System.out.println("No tasks yet! Your list is empty.");
+            System.out.println("Add a task to get started!");
+        } else {
+            System.out.println("You have " + tasks.size() + " task(s):");
+            System.out.println();
+            
+            for (int i = 0; i < tasks.size(); i++) {
+                System.out.println((i + 1) + ". " + tasks.get(i));
+            }
+        }
+    }
