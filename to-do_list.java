@@ -111,3 +111,10 @@ public class TodoListApp {
             }
         }
     }
+    private static void removeTask() {
+        System.out.println("--- Remove Task ---");
+        
+        if (tasks.isEmpty()) {
+            System.out.println("No tasks to remove! Your list is empty.");
+            return;
+        }
