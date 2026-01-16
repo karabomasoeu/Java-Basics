@@ -138,3 +138,10 @@ public class TodoListApp {
             System.out.println("Error: Please enter a valid number!");
         }
     }
+    private static void markTaskComplete() {
+        System.out.println("--- Mark Task Complete ---");
+        
+        if (tasks.isEmpty()) {
+            System.out.println("No tasks to mark complete. Your list is empty.");
+            return;
+        }
