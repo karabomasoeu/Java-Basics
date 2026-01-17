@@ -1,4 +1,4 @@
-import java.util.ArrayList;
++[import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TodoListApp {
@@ -145,3 +145,15 @@ public class TodoListApp {
             System.out.println("No tasks to mark complete. Your list is empty.");
             return;
         }
+    System.out.print("Are you sure you want to delete all " + tasks.size() + " task(s)? (yes/no): ");
+        String confirmation = scanner.nextLine().toLowerCase();
+        
+        if (confirmation.equals("yes") || confirmation.equals("y")) {
+            int count = tasks.size();
+            tasks.clear();
+            System.out.println("✓ All " + count + " task(s) have been deleted!");
+        } else {
+            System.out.println("Clear operation cancelled.");
+        }
+    }
+}
