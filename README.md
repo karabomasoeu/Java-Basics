@@ -1,4 +1,4 @@
-# Java Basics
+# Java Basics 
 
 A collection of six beginner-friendly Java projects that cover fundamental programming concepts. Each project is designed to practice basic Java skills through practical, hands-on applications.
 

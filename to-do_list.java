@@ -8,9 +8,9 @@ public class TodoListApp {
     public static void main(String[] args) {
         boolean running = true;
         
-        System.out.println("========================================");
+        System.out.println("=========================================");
         System.out.println("    Welcome to your to-do list manager!");
-        System.out.println("========================================");
+        System.out.println("=========================================");
         System.out.println();
 
         while (running) {
